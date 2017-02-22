@@ -22,8 +22,6 @@
   %p= t('about.about_mastodon').html_safe
   %p= t('about.about_instance', instance: Rails.configuration.x.local_domain).html_safe
 
-  .screenshot= image_tag 'screenshot.png'
-
   - unless @description.blank?
     %p= @description.html_safe
 
